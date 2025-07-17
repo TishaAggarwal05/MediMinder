@@ -9,13 +9,19 @@ MediMinder is a full-stack health-tech web application designed to help elderly 
 ---
 
 ## 🚀 Features
+- 📅 Medication Tracking – Set daily medications with dosage and time, and receive timely reminders.
 
-- ✅ **Medication Tracking** — Timely reminders for daily pills
-- 🩺 **Doctor Appointment Manager** — Track upcoming consultations
-- 🥗 **Personalized Health & Diet Tips** — Based on user profile
-- 📅 **Daily Dashboard** — See today’s medications and events at a glance
-- 💡 **Clean, Accessible UI** — Built for ease of use, especially for seniors
+-🩺 Doctor Appointment Reminders – Schedule appointments and get alerts so you never miss a checkup.
 
+-🍲 Health & Eating Tips – Personalized health and nutrition suggestions based on user profile.
+
+-👴 Elder-Friendly UI – Clean, accessible interface optimized for senior users.
+
+-🔄 Progress Visualization – Pie chart shows weekly stats of medication adherence (taken vs skipped).
+
+-🧠 React Hook Form Integration – Efficient and user-friendly form validation and state management.
+
+-📆 React Big Calendar Integration – Visual calendar for tracking appointments and medication schedules at a glance.
 ---
 
 ## 🖥️ Tech Stack
