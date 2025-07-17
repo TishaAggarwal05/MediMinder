@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const morgan = require("morgan");
 const engine = require("ejs-mate");
 const path = require('path');
-//require('dotenv').config(); //when use env file
+require('dotenv').config(); //when use env file
 var cors = require('cors')
 var corsOptions = {
     origin: 'http://localhost:5173',
@@ -16,12 +16,16 @@ app.use(methodOverride('_method'));
 app.use(cors(corsOptions))
 
 main().catch(err => console.log(err));
-async function main() {
-    await mongoose.connect();//url /database name
+// async function main() {
+//     await mongoose.connect();//url /database name
 
-    // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
-    await mongoose.connect(process.env.MONGO_URI); //if in env file
+//     // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
+//     await mongoose.connect(process.env.MONGO_URI); //if in env file
+// }
+async function main() {
+    await mongoose.connect(process.env.MONGO_URI);
 }
+main().catch(err => console.log(err));
 
 
 app.engine('ejs', engine);

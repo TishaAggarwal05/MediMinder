@@ -11,7 +11,7 @@ import Medicine from './components/Medicine.jsx';
 import AddMedicationForm from './Forms/AddMedicationForm.jsx';
 import Appointment from './components/Appointment.jsx';
 
-require('dotenv').config();
+// require('dotenv').config();
 
 // const port = process.env.PORT;
 // const db = process.env.MONGO_URI;
