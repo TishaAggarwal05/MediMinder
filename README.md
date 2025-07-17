@@ -48,7 +48,7 @@ MediMinder is a full-stack health-tech web application designed to help elderly 
 
 ## 📸 Screenshots
 
-> *(Add real screenshots or placeholders below)*
+
 
 ## Landing Page View
 ![Landing Page](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img1.png)
