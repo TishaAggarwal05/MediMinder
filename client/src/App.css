@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #dcf2e2ff;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+
+
+}
+.custom-tabs .nav-link {
+  color: white !important;
+  background-color: transparent;
+}
+
+.custom-tabs .nav-link.active {
+  color: #fff !important;
+  background-color: #1b403b !important; /* or any dark shade */
+  border-color: #1b403b #1b403b #1b403b;
+}
+
+
+.navbar-dark .navbar-brand {
+  color: #ffffff !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link.active {
+  background-color: #b2dfdb !important;
+  color: #147162 !important;
+}
+
+.custom-card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: rgb(41, 97, 90);
+  color:white;
+}
+
+
+
+.list-group-item {
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+}
+
+.nav-tabs .nav-link {
+  color: #333 !important;
+  /* fallback for inactive tabs */
+}
+
+.inpError {
+  color: red;
+}
+
+.scrollable-tab-pane {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.rbc-toolbar {
+  background-color: #e6f4ea;
+  color: #1b403bff;
+}
+
+.rbc-toolbar button {
+  color: #1b403bff;
+  border: none;
+  background: transparent;
+}
+
+.rbc-toolbar button:focus,
+.rbc-toolbar button.rbc-active {
+  background-color: #1b403bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.rbc-btn-group button:hover {
+  background-color: #d2f2d2;
+}

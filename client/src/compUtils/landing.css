@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e6f4ec;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-custom {
+  background-color: #225c4f;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+  color: #ffffff !important;
+}
+
+.hero {
+  background-color: #d9ede3;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+
+
+.hero h1 {
+  color: #225c4f;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #3a3a3a;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.features {
+  padding: 4rem 0;
+  background: #f7fcf8; /* soft greenish background */
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2f855a;
+  margin-bottom: 2rem;
+}
+
+.features .card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.features .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.features .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2f855a;
+  margin-bottom: 0.75rem;
+}
+
+.features .card-text {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+
+.footer {
+  background-color: #225c4f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
