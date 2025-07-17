@@ -27,4 +27,4 @@ dist-ssr
 
 utils.txt
 
-client/.env
+.env
