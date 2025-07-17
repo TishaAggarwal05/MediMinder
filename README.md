@@ -100,25 +100,22 @@ npm run dev
 
 
 ## Available Commands
-In backend/:
-npm start — Start backend server
+# In backend/:
+nodemon index.js
 
-npm run dev — Start server with nodemon
-
-In client/:
+# In client/:
 npm run dev — Start React frontend
 
-npm run build — Build for production
 
 
 ## 🔮 Future Scope
 
-🔐 Authentication & User Login System
+- 🔐 Authentication & User Login System
 
-🤖 AI-powered Health Chatbot
+- 🤖 AI-powered Health Chatbot
 
-📲 SMS or Email Reminders Integration
+- 📲 SMS or Email Reminders Integration
 
-🗣️ Voice Command Support for Accessibility
+- 🗣️ Voice Command Support for Accessibility
 
-🧠 ML-based Health Tip Recommendations
+- 🧠 ML-based Health Tip Recommendations
