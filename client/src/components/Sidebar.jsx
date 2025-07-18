@@ -11,8 +11,8 @@ export default function Sidebar({userId}) {
         <Link className="nav-link" to="/user/dashboard" state={{userId:userId}}>Dashboard</Link>
         <Link className="nav-link" to="/user/medications" state={{userId:userId}}>Medications</Link>
         <Link className="nav-link" to="/user/appointment">Appointments</Link>
-        <Link className="nav-link" to="/tips">Health Tips</Link>
-        <Link className="nav-link" to="/assistant">Assistant</Link>
+        {/* <Link className="nav-link" to="/tips">Health Tips</Link>
+        <Link className="nav-link" to="/assistant">Assistant</Link> */}
       </Nav>
     </div>
   );
