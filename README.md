@@ -53,11 +53,14 @@ MediMinder is a full-stack health-tech web application designed to help elderly 
 ## Landing Page View
 ![Landing Page](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img1.png)
 
-## Dashboard View
-![Dashboard](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img2.png)
 ## Dashboard View - Real time MedStatus updates tab,today appointment tab
-![Dashboard](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img3.png)
+![Dashboard](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img2.png)
+## Health Chatbot-
+![Dashboard](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img7.png)
+![Dashboard](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img8.png)
 ## Medicine View -
+![Dashboard](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img3.png)
+## Analytics of Pills consistency- 
 ![Dashboard](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img4.png)
 ## Add new Medicine- 
 ![Dashboard](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img5.png)
