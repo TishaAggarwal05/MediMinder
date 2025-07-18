@@ -77,8 +77,17 @@ MediMinder is a full-stack health-tech web application designed to help elderly 
 ### 📦 Prerequisites
 - Node.js & npm installed
 - MongoDB URI (local or cloud like MongoDB Atlas)
+- Environment Setup
+Before running the project, ensure the following environment variables are set. These are required for secure access and external integrations:
 
----
+✅ 1. Ngrok Setup
+To expose your local server securely over the internet:
+
+Step 1: Sign up at https://dashboard.ngrok.com and Get your Ngrok Auth Token
+
+Step 3: (Optional) Reserve a Custom Domain (for stability across sessions)
+
+✅ 2. Hugging Face API Token (Meta LLaMA 3)
 
 ### 🔧 Setup Instructions
 
@@ -86,6 +95,7 @@ MediMinder is a full-stack health-tech web application designed to help elderly 
 git clone https://github.com/TishaAggarwal05/MediMinder.git
 cd MediMinder
 ```
+
 ```bash
 cd backend
 npm install
