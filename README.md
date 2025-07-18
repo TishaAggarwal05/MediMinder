@@ -128,10 +128,7 @@ npm run dev — Start React frontend
 
 - 🔐 Authentication & User Login System
 
-- 🤖 AI-powered Health Chatbot
-
 - 📲 SMS or Email Reminders Integration
 
 - 🗣️ Voice Command Support for Accessibility
 
-- 🧠 ML-based Health Tip Recommendations
