@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Tab, Nav } from 'react-bootstrap';
 import '../App.css'; // Custom styles
-
-
+import Widget from './Widget';
 import ProfileCard from './ProfileCard'
 import DailyTab from './DailyTab'
 
@@ -30,7 +29,7 @@ export default function Dashboard() {
           </Row>
         </Col>      
       </div>
-        {/* Main Content */}
+      <Widget userId={userId} Userinfo={User}/>
       
     </>
   );
