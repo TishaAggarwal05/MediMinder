@@ -51,7 +51,7 @@ MediMinder is a full-stack health-tech web application designed to help elderly 
 
 
 ## Landing Page View
-![Landing Page](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img1.png)
+<img src="https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img1.png" width="500"/>
 
 ## Dashboard View - Real time MedStatus updates tab,today appointment tab
 ![Dashboard](https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img2.png)
