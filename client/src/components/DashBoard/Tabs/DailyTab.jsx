@@ -16,7 +16,7 @@ export default function DailyTab({ userId }) {
           <Nav variant="tabs">
             <Nav.Item><Nav.Link  eventKey="medicine today">pills</Nav.Link></Nav.Item>
             <Nav.Item><Nav.Link eventKey="appointments">Appointments</Nav.Link></Nav.Item>
-            <Nav.Item><Nav.Link eventKey="diagnosis">Diagnosis</Nav.Link></Nav.Item>
+            
           </Nav>
           <Tab.Content className="mt-3">
             <Tab.Pane eventKey="medicine today" className="scrollable-tab-pane">
@@ -25,9 +25,7 @@ export default function DailyTab({ userId }) {
             <Tab.Pane eventKey="appointments" className="scrollable-tab-pane">
               <ApptCard userId={userId} />
             </Tab.Pane>
-            <Tab.Pane eventKey="diagnosis" className="scrollable-tab-pane">
-              <p>Type 2 Diabetes, Hypertension</p>
-            </Tab.Pane>
+
           </Tab.Content>
 
         </Tab.Container>
