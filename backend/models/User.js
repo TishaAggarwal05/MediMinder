@@ -6,6 +6,7 @@ const userSchema = new mongoose.Schema({
   gender: { type: String, enum: ['Male', 'Female', 'Other'], required: true },
   email: { type: String, required: true, unique: true },
   passwordHash: { type: String }, // For future auth integration
+  // avatar: { type: String, default: "default.png" },
 
   role: { type: String, enum: ['patient', 'caregiver'], default: 'patient' },
 

@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 const Widget = ({ Userinfo, userId }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [userInput, setUserInput] = useState('');
-    const [chatHistory, setChatHistory] = useState([]);
+    const [chatHistory, setChatHistory] = useState([{ sender: "bot", text: "to use health bot contact aggarwal.tisha05@gmail.com first to start else it wont start :)" }]);
     const [Meds, setMeds] = useState([]);
 
     useEffect(() => {

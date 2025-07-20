@@ -38,17 +38,7 @@ const MedCard = ({ Meds, handledelete, getAdherenceStats }) => {
         // const monthStats = await getAdherenceStats(Meds, 30);
         setChartData({ draw: true, take: weekStats.taken, nottake: weekStats.missed })
     }
-{/* <div
-                style={{
-                    backgroundColor: "#1b403bff",
-                     // increases padding on all sides
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    borderRadius: "12px", // makes corners rounded
-                    border:"solid #1b403bff 4px"
-                }}
-            ></div> */}
+
     return (
         <div  className="container-fluid">
             <section style={{ marginLeft: '100px' }}>
