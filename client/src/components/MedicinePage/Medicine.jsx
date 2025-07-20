@@ -2,11 +2,11 @@ import React from 'react'
 import { useOutletContext } from 'react-router-dom';
 import { useEffect, useState } from "react";
 import axios from "axios"
-import MedCard from '../compUtils/MedCard';
+import MedCard from './MedCard.jsx';
 import { NavLink ,Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 
-import getAdherenceStats from "../compUtils/Analytics/AdherenceStatsfunc.js"
+import getAdherenceStats from "./Analytics/AdherenceStatsfunc.js"
 
 
 

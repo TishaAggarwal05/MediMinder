@@ -2,7 +2,7 @@ const express = require("express");
 const router= express.Router();
 
 const Medication = require('../models/medication');
-// const Appointment = require('./models/Appointment')
+
 
 router.post('/', async (req, res) => {
     try {
@@ -21,9 +21,9 @@ router.get('/:id', async (req, res) => {
     try {
 
         const { id } = req.params;
-        // const objectId = new mongoose.Types.ObjectId(userId);
+    
         const getMed = await Medication.find({ userId: id });
-        console.log("gettttt meddddddddd", getMed)
+       
         if (getMed) {
             res.status(201).json({ msg: "got all listings of medicine", Medlist: getMed })
         } else {

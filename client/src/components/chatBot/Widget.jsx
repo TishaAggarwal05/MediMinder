@@ -40,7 +40,6 @@ const Widget = ({ Userinfo, userId }) => {
 
             const response = await axios.post("https://hamster-stirred-bluejay.ngrok-free.app/healthbot", { query });
             const botReply = response.data.reply;
-
             setChatHistory(prev => [...prev, { sender: "bot", text: botReply }]);
 
         } catch (error) {
@@ -87,7 +86,7 @@ const Widget = ({ Userinfo, userId }) => {
                         <div className="chat-input">
                             <input
                                 type="text"
-                                placeholder="Type your message..."
+                                placeholder="Ask your health queries :)..."
                                 value={userInput}
                                 onChange={(e) => setUserInput(e.target.value)}
                                 onKeyDown={(e) => e.key === 'Enter' && handleSend()}

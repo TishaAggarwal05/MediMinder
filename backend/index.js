@@ -15,13 +15,7 @@ const methodOverride = require('method-override')// used to fake delete and put 
 app.use(methodOverride('_method'));
 app.use(cors(corsOptions))
 
-main().catch(err => console.log(err));
-// async function main() {
-//     await mongoose.connect();//url /database name
 
-//     // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
-//     await mongoose.connect(process.env.MONGO_URI); //if in env file
-// }
 async function main() {
     await mongoose.connect(process.env.MONGO_URI);
 }
@@ -36,11 +30,9 @@ app.use(express.json()); // Parse incoming JSON requests
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded data from form submissions
 app.use(morgan('tiny'));
 
+
 //require all models
 const User = require('./models/User');
-
-
-
 const medicineRoutes = require('./routes/medicine');
 app.use('/medicine',medicineRoutes);//route defintion starting with /medicine is in ./routes/medicine
 const AppointmentRoutes = require('./routes/Appointment');
@@ -64,19 +56,19 @@ app.post('/signup', async (req, res) => {
 })
 
 app.post('/login', async (req, res) => {
-    console.log("qwerty")
+    
     const { username, email } = req.body;
     try {
         const getuser = await User.findOne({ email: email });
         if (getuser) {
-            console.log("asdfgh")
+            
             res.status(200).json({ msg: "user data fetched!!", userId: getuser._id.toString() })
         } else {
-            console.log("qweegfgggggrty")
+           
             res.status(500).json({ msg: "Invalid user!!" })
         }
     } catch {
-        console.log("eegegegegeegeg")
+        
         res.status(500).json({ msg: "we ran into a problem :(" })
     }
 })

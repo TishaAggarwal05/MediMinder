@@ -1,7 +1,7 @@
 import { Container, Row, Col, Card, Button, Tab, Nav } from 'react-bootstrap';
-import MedStatus from './MedStatus';
+import MedStatus from '/src/components/DashBoard/MedStatus.jsx';
 import { useState } from "react";
-import ApptCard from '../compUtils/ApptCard';
+import ApptCard from './ApptCard';
 export default function DailyTab({ userId }) {
   const [medStatusRefresh, setMedStatusRefresh] = useState(false);
 

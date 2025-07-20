@@ -23,7 +23,7 @@ router.get("/:userId", async(req,res)=>{
     try{
         const {userId}= req.params;
         const getAppts = await Appointment.find({userId});
-        console.log("all appointment lists is here::::::",getAppts);
+        console.log("all appointment lists is here:",getAppts);
         res.status(201).json(getAppts);
     }catch (err) {
     res.status(500).json({ error: err.message });

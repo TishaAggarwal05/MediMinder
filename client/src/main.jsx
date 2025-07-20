@@ -2,20 +2,18 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter,createRoutesFromElements,Route,RouterProvider } from 'react-router-dom';
-import Dashboard from './components/Dashboard'
-import Landing from './components/landing'
+import Dashboard from './components/DashBoard/Dashboard'
+import Landing from './components/LandingPage/landing'
 import App from './App.jsx'
 import SignupForm from './Forms/SignupForm.jsx';
 import Login from './Forms/Login.jsx';
-import Medicine from './components/Medicine.jsx';
+import Medicine from './components/MedicinePage/Medicine.jsx';
 import AddMedicationForm from './Forms/AddMedicationForm.jsx';
 import Appointment from './components/Appointment.jsx';
 
 // require('dotenv').config();
 
 // const port = process.env.PORT;
-// const db = process.env.MONGO_URI;
-
 
 
 const routes= createBrowserRouter(

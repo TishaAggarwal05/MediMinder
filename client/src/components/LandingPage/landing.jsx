@@ -1,9 +1,9 @@
 import React from 'react';
-import "../compUtils/landing.css"
-import Footer from '../compUtils/Footer'
-import Features from '../compUtils/Features'
-import HeroSection from '../compUtils/HeroSection'
-import NavBar from '../compUtils/NavBar'
+import "./compUtils/landing.css"
+import Footer from './compUtils/Footer'
+import Features from './compUtils/Features'
+import HeroSection from './compUtils/HeroSection'
+import NavBar from './compUtils/NavBar'
 import {NavLink} from  'react-router-dom';
 const Landing = () => {
   return (

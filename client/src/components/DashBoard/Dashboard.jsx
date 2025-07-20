@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, Tab, Nav } from 'react-bootstrap';
-import '../App.css'; // Custom styles
-import Widget from './Widget';
+// import '.../App.css'; // Custom styles
+import Widget from '../chatBot/Widget';
 import ProfileCard from './ProfileCard'
-import DailyTab from './DailyTab'
+import DailyTab from './Tabs/DailyTab.jsx'
 
 import { useOutletContext } from 'react-router-dom';
 
