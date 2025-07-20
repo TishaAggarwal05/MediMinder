@@ -53,7 +53,7 @@ MediMinder is a full-stack health-tech web application designed to help elderly 
 ## Landing Page View
 <img src="https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img1.png" width="500"/>
 ## Dashboard View - Real time MedStatus updates tab,today appointment tab
-<img src="https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img2.png" width="500"/>
+<img src="https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img11.png" width="500"/>
 ## Health Chatbot
 <img src="https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img7.png" width="500"/>
 <img src="https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img8.png" width="500"/>
@@ -64,7 +64,7 @@ MediMinder is a full-stack health-tech web application designed to help elderly 
 ## Add new Medicine
 <img src="https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img5.png" width="500"/>
 ## Add New Appointment + Big react Calendar-
-<img src="https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img6.png" width="500"/>
+<img src="https://github.com/TishaAggarwal05/MediMinder/blob/main/screenshots/img10.png" width="500"/>
 
 
 
