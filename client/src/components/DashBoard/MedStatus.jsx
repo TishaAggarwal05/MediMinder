@@ -19,7 +19,8 @@ const MedStatus = ({ userId, refreshTrigger, triggerMedStatusRefresh }) => {
     useEffect(() => {
         const fetchMeds = async () => {
             try {
-                const res = await axios.get(`http://localhost:3000/medicine/${userId}`);
+                const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+                const res = await axios.get(`${backendUrl}/medicine/${userId}`);
                 setMedications(res.data.Medlist);
                 setLoading(false);
             } catch (err) {
@@ -65,8 +66,8 @@ const MedStatus = ({ userId, refreshTrigger, triggerMedStatusRefresh }) => {
     const handleStatusUpdate = async (medId, time, value) => {
         try {
 
-            
-            const res = await axios.patch(`http://localhost:3000/medicine/status/${medId}`, {
+            const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+            const res = await axios.patch(`${backendUrl}/medicine/status/${medId}`, {
                 date: today,
                 time,
                 value
@@ -139,16 +140,6 @@ const MedStatus = ({ userId, refreshTrigger, triggerMedStatusRefresh }) => {
                                                     >
                                                         Taken
                                                     </Button>
-
-
-                                                    {/* <Button
-                                                        variant="outline-danger"
-                                                        size="sm"
-                                                        onClick={() => handleStatusUpdate(med._id, time,false)}
-                                                        disabled={timeStatus !== undefined}
-                                                    >
-                                                        Skipped
-                                                    </Button> */}
 
                                                 </div>
                                             </Col>

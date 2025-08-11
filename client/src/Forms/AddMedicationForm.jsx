@@ -34,7 +34,8 @@ export default function AddMedicationForm() {
         };
 
         try {
-            const res = await axios.post('http://localhost:3000/medicine', payload);
+            const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+            const res = await axios.post('${backendUrl}', payload);
             alert(res.data.message);
             reset(); // Clear form
         } catch (err) {

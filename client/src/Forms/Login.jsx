@@ -13,7 +13,8 @@ const Login = () => {
         formState: { errors, isSubmitting },
     } = useForm()
     const onSubmit = async (data) => {
-        const res = await axios.post('http://localhost:3000/login', data);
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+        const res = await axios.post(`${backendUrl}/login`, data);
         console.log(res.data.msg);
         navigate('/user/dashboard', { state: { userId:res.data.userId } });
     }

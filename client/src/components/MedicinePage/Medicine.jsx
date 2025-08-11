@@ -18,7 +18,8 @@ const Medicine = () => {
 
     async function getMedicines() {
       try {
-        const res = await axios.get(`http://localhost:3000/medicine/${userId}`);
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+        const res = await axios.get(`${backendUrl}/medicine/${userId}`);
         console.log(res.data.Medlist);
         setMeds(res.data.Medlist);
       } catch (err) {

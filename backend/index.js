@@ -6,9 +6,8 @@ const path = require('path');
 require('dotenv').config(); //when use env file
 var cors = require('cors')
 var corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
     credentials: true,
-
 }
 const app = express(); // Initialize Express app
 const methodOverride = require('method-override')// used to fake delete and put patch request in browser form 
@@ -87,6 +86,6 @@ app.get('/user/:id', async (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log("listening to port 3000");
+app.listen(process.env.PORT, () => {
+    console.log("listening to port PORT");
 })

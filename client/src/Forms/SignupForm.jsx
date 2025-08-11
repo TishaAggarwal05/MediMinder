@@ -22,8 +22,8 @@ const SignupForm = () => {
 
   const onSubmit= async(data) => {
     try{
-
-        const res= await axios.post('http://localhost:3000/signup', data );
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+        const res= await axios.post(`${backendUrl}/signup`, data );
         console.log(`messsage to signup form :${res.data.msg}`);
         // const userId= res.data.userId;
         // console.log("tomar userwa id:")

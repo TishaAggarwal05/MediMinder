@@ -41,7 +41,10 @@ function App() {
         return;
       }
       try {
-        const res = await axios.get(`http://localhost:3000/user/${userId}`);
+      
+        // const res = await axios.get(`http://localhost:3000/user/${userId}`);
+        const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+        const res = await axios.get(`${backendUrl}/user/${userId}`);
         console.log('Fetched user:', res.data.data);
         setUser(res.data.data);
       } catch (err) {

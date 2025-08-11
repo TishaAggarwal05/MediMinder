@@ -39,8 +39,8 @@ const AppointmentForm = ({ userId, fetchAppointments }) => {
                 date: selectedDate,
                 address: data.address,
             };
-
-            await axios.post(`http://localhost:3000/appointments/${userId}`, payload);
+            const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+            await axios.post(`${backendUrl}/appointments/${userId}`, payload);
             alert("Appointment saved!");
             reset();
             setSelectedDate("");

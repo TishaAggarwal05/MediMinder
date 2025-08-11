@@ -14,7 +14,9 @@ const MedCard = ({ Meds, handledelete, getAdherenceStats }) => {
     async function deleteMed() {
         console.log(Meds._id);
         try {
-            const res = await axios.delete(`http://localhost:3000/medicine/${Meds._id}`);
+            const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+
+            const res = await axios.delete(`${backendUrl}/medicine/${Meds._id}`);
             handledelete(Meds._id);
             console.log(res.data.message);
         } catch (err) {

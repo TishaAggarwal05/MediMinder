@@ -36,7 +36,9 @@ export default function AppointmentSetter() {
 
     const fetchAppointments = async () => {
         try {
-            const res = await axios.get(`http://localhost:3000/appointments/${userId}`);
+            const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+
+            const res = await axios.get(`${backendUrl}/appointments/${userId}`);
 
             const mapped = res.data.map(appt => {
                 // Sanitize values
