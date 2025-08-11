@@ -35,8 +35,7 @@ const Login = () => {
                             {...register('username', { required: 'Username is required' })}
                           
                         />
-                        {errors.username && <span style={styles.error}>{errors.username.message}</span>}
-
+                        {errors.username && <span style={{ color: 'red', fontSize: '0.9em' }}>{errors.username.message}</span>}
                         <label>Email</label>
                         <input
                             type="email"
@@ -50,7 +49,7 @@ const Login = () => {
                             })}
                           
                         />
-                        {errors.email && <span style={styles.error}>{errors.email.message}</span>}
+                        {errors.email && <span style={{ color: 'red', fontSize: '0.9em' }}>{errors.email.message}</span>}
 
                         <label>Password (optional)</label>
                         <input
