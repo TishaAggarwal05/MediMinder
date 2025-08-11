@@ -1,7 +1,6 @@
 import { useOutletContext } from 'react-router-dom';
 import axios from "axios";
 import { useEffect, useState } from "react";
-
 import "../App.css"
 import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
 import format from 'date-fns/format';
@@ -105,10 +104,7 @@ export default function AppointmentSetter() {
                             
                         }
                     })}
-                />
-
-
-
+                />       
 
 
         </div>
