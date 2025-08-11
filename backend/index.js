@@ -3,12 +3,25 @@ const mongoose = require("mongoose");
 const morgan = require("morgan");
 const engine = require("ejs-mate");
 const path = require('path');
+const cors = require('cors');
 require('dotenv').config(); //when use env file
-var cors = require('cors')
-var corsOptions = {
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-    credentials: true,
-}
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://mediminder-itt0.onrender.com'
+];
+
+const corsOptions = {
+    origin: (origin, callback) => {
+        if (allowedOrigins.includes(origin) || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    credentials: true
+};
+
+
 const app = express(); // Initialize Express app
 const methodOverride = require('method-override')// used to fake delete and put patch request in browser form 
 app.use(methodOverride('_method'));
