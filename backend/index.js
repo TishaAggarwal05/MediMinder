@@ -77,7 +77,7 @@ app.post('/login', async (req, res) => {
             res.status(200).json({ msg: "user data fetched!!", userId: getuser._id.toString() })
         } else {
            
-            res.status(500).json({ msg: "Invalid user!!" })
+            res.status(400).json({ msg: "Invalid user!!" })
         }
     } catch {
         

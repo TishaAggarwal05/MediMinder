@@ -14,9 +14,18 @@ const Login = () => {
     } = useForm()
     const onSubmit = async (data) => {
         const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
-        const res = await axios.post(`${backendUrl}/login`, data);
-        console.log(res.data.msg);
-        navigate('/user/dashboard', { state: { userId:res.data.userId } });
+        try{
+            const res = await axios.post(`${backendUrl}/login`, data);
+            console.log("Login successful:", res.data);
+            navigate('/user/dashboard', { state: { userId:res.data.userId } });
+        }
+        catch (error) {
+            console.error("Error during login:", error);
+            alert("Login failed. Please check your credentials.");
+            return;
+        }
+
+        
     }
 
 
